@@ -1,0 +1,29 @@
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node (se usar no futuro)
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Builds
+dist/
+build/
+
+# Ambiente
+.env
+.env.local

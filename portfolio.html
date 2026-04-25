@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Projetos - Portfólio Profissional">
+    <title>Portfólio | Meus Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu de Navegação Fixa -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Meu Portfólio</h1>
+            </div>
+            
+            <!-- Botão do menu responsivo -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir/Fechar Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu de navegação -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html" class="active">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <!-- Botão de tema claro/escuro -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar Tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <section class="portfolio-section">
+            <h1>Meu Portfólio</h1>
+            <p class="section-description">
+                Confira alguns dos meus projetos mais recentes e significativos. 
+                Cada projeto representa meu crescimento e dedicação ao desenvolvimento.
+            </p>
+
+            <!-- Filtros de Categorias -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+
+            <!-- Grid de Projetos -->
+            <div class="portfolio-grid">
+                <!-- Projeto 1 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="Projeto 1" onerror="this.src='assets/placeholder.jpg'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">Ver Projeto →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Site de E-commerce</h3>
+                        <p class="project-category">Web Development</p>
+                        <p class="project-description">
+                            Site de e-commerce responsivo desenvolvido com HTML5, CSS3 e JavaScript. 
+                            Inclui carrinho de compras e validações.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="Projeto 2" onerror="this.src='assets/placeholder.jpg'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">Ver Projeto →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Aplicação de Tarefas</h3>
+                        <p class="project-category">Web Development</p>
+                        <p class="project-description">
+                            Aplicação de gerenciamento de tarefas (To-do List) com localStorage 
+                            para persistência de dados.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="portfolio-card" data-category="design">
+                    <div class="project-image">
+                        <img src="assets/project3.jpg" alt="Projeto 3" onerror="this.src='assets/placeholder.jpg'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">Ver Projeto →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Design de Interface</h3>
+                        <p class="project-category">UI Design</p>
+                        <p class="project-description">
+                            Interface moderna e intuitiva para aplicação mobile. 
+                            Design responsivo com foco em experiência do usuário.
+                        </p>
+                        <div class="project-tags">
+                            <span>UI Design</span>
+                            <span>Responsivo</span>
+                            <span>UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="portfolio-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="assets/project4.jpg" alt="Projeto 4" onerror="this.src='assets/placeholder.jpg'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">Ver Projeto →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>App de Clima</h3>
+                        <p class="project-category">Mobile Development</p>
+                        <p class="project-description">
+                            Aplicação responsiva de previsão do tempo com chamadas à API. 
+                            Interface intuitiva e layout adaptável.
+                        </p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>Responsivo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project5.jpg" alt="Projeto 5" onerror="this.src='assets/placeholder.jpg'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">Ver Projeto →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Blog Pessoal</h3>
+                        <p class="project-category">Web Development</p>
+                        <p class="project-description">
+                            Blog responsivo com artigos, comentários e sistema de busca. 
+                            Desenvolvido com HTML5, CSS3 e JavaScript.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 -->
+                <div class="portfolio-card" data-category="design">
+                    <div class="project-image">
+                        <img src="assets/project6.jpg" alt="Projeto 6" onerror="this.src='assets/placeholder.jpg'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">Ver Projeto →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Branding e Identidade Visual</h3>
+                        <p class="project-category">Graphic Design</p>
+                        <p class="project-description">
+                            Criação de identidade visual completa para uma startup. 
+                            Logo, paleta de cores e guidelines.
+                        </p>
+                        <div class="project-tags">
+                            <span>Branding</span>
+                            <span>Design</span>
+                            <span>Identidade Visual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 Meu Portfólio. Todos os direitos reservados.</p>
+        <p>Desenvolvido com HTML5, CSS3 e JavaScript puro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
